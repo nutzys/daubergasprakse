@@ -1,21 +1,11 @@
-"use client";
-
 import React from "react";
 import image from "@/public/bg-ppl.webp";
 import Image from "next/image";
 import CTAButton from "../CTAButton";
-import { useInView } from "@/lib/useIsInView";
 
 const AboutMe = () => {
-  const [ref, isInView] = useInView<HTMLDivElement>();
-
   return (
-    <div
-      className={`my-[140px] flex justify-between transition-opacity duration-1000 ease-in-out ${
-        isInView ? "opacity-100" : "opacity-0"
-      }`}
-      ref={ref}
-    >
+    <div className="my-[140px] flex justify-between">
       <div>
         <Image
           src={image}
