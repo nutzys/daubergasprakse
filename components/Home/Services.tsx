@@ -5,7 +5,7 @@ import ServicesCard from "../ServicesCard";
 import { useInView } from "@/lib/useIsInView";
 
 const Services = () => {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView<HTMLDivElement>();
 
   return (
     <div

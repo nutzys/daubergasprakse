@@ -7,7 +7,7 @@ import CTAButton from "../CTAButton";
 import { useInView } from "@/lib/useIsInView";
 
 const AboutMe = () => {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView<HTMLDivElement>();
 
   return (
     <div
