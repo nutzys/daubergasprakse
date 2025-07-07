@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const InformationField = () => {
   return (
-    <div className="space-y-11">
+    <div className="space-y-11 mb-[140px]">
       <div className="flex justify-between items-center">
         <div className="mr-52">
           <div>
